@@ -7,7 +7,7 @@ import os
 load_dotenv()
 api_key = os.getenv("GROQ_API_KEY")
 
-client = Groq(api_key=api_key)
+client = Groq(api_key="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")
 
 st.set_page_config(page_title="SWOTify", page_icon="🧠")
 
@@ -29,7 +29,7 @@ if submitted and topic:
         """
 
         response = client.chat.completions.create(
-            model="llama3-8b-8192",
+            model="llama-3.1-8b-instant",
             messages=[{"role": "user", "content": prompt}],
         )
 
