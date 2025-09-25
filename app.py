@@ -7,7 +7,7 @@ import os
 load_dotenv()
 api_key = os.getenv("GROQ_API_KEY")
 
-client = Groq(api_key="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")
+client = Groq(api_key=api_key)
 
 st.set_page_config(page_title="SWOTify", page_icon="🧠")
 
